@@ -1,5 +1,5 @@
 <?php
-    require 'database.php';
+    require 'database/database.php';
     if($connection->connect_error){
         die("Connection failed: " . $conn->connect_error);
     }

@@ -1,5 +1,5 @@
 <?php
-    require 'database.php';
+    require 'database/database.php';
     $ND=$_POST['ND'];
     $DA=$_POST['DA'];
     $BTcheck=$_POST["BTcheck"];
