@@ -3,7 +3,7 @@
     if($connection->connect_error){
         die("Connection failed: " . $conn->connect_error);
     }
-    $sql="SELECT ND, DA, BTcheck FROM dieukhien";
+    $sql="SELECT BTcheck FROM dieukhien";
     $response=array();
     $result=$connection->query($sql);
     if($result->num_rows>=0){

@@ -8,7 +8,7 @@
     }
     $date = date("Y-m-d");
 	$time = date("H:i:s");
-    $sql="INSERT INTO sensor  (ND, DA, BTcheck,date,time) VALUES('".$ND."','".$DA."','".$BTcheck."') FROM sensor";
+    $sql="INSERT INTO sensor (ND, DA, BTcheck,date,time) VALUES ('".$ND."','".$DA."','".$BTcheck."','".$date."','".$time."')";
     if($connection->query($sql)){
         echo "Insert OK";
     }else{
