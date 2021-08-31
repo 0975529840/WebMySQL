@@ -1,7 +1,6 @@
 <?php
     require 'database/database.php';
-    //$BTcheck=$_POST["BTcheck"];
-    $BTcheck=0;
+    $BTcheck=$_POST["BTcheck"];
     if($connection->connect_error){
         die("Connection failed: " . $conn->connect_error);
     }
@@ -13,6 +12,5 @@
     }else{
         die("Update Failed");
     }
-    
     $connection->close();
 ?>

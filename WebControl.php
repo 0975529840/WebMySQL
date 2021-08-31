@@ -12,6 +12,5 @@
     }else{
         die("Update Failed");
     }
-    
     $connection->close();
 ?>

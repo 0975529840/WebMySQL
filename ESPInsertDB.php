@@ -14,6 +14,5 @@
     }else{
         die("Insert Failed");
     }
-    
     $connection->close();
 ?>
