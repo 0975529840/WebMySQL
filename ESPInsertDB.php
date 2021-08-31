@@ -7,12 +7,13 @@
         die("Connection failed: " . $conn->connect_error);
     }
     $date = date("Y-m-d");
-	$time = date("H:i:s");
+    $time = date("H:i:s");
     $sql="INSERT INTO sensor (ND, DA, BTcheck,date,time) VALUES ('".$ND."','".$DA."','".$BTcheck."','".$date."','".$time."')";
     if($connection->query($sql)){
         echo "Insert OK";
     }else{
         die("Insert Failed");
     }
+    
     $connection->close();
 ?>

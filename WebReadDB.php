@@ -3,7 +3,7 @@
     if($connection->connect_error){
         die("Connection failed: " . $conn->connect_error);
     }
-    $sql="SELECT ND, DA, BTcheck FROM sensor";
+    $sql="SELECT ND, DA, BTcheck,date FROM sensor";
     $response=array();
     $result=$connection->query($sql);
     if($result->num_rows>=0){
@@ -11,6 +11,7 @@
             $response['ND'] = $row['ND'];
 			$response['DA'] = $row['DA'];
             $response['BTcheck']=$row['BTcheck'];
+            $response['date']=$row['date'];
         }
         echo json_encode($response);
         $result->free();
